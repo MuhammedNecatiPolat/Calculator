@@ -37,7 +37,7 @@ html {
     
 }
 
-.zero {
+.zero.number {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -103,6 +103,10 @@ html {
 .displayedNumber {
     color: white;
 
+}
+
+.displayedOperator {
+    color: white;
 }
 
 .footer {
