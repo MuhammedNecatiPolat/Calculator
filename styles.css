@@ -93,7 +93,16 @@ html {
     background-color: #F0A6CA;
     color: #B8BEDD;
     align-self: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.displayedNumber {
+    color: white;
+
 }
 
 .footer {

@@ -14,23 +14,43 @@ let str = '';
 let myList = [];
 const numbers = document.querySelectorAll('.number')
 const displayScreen = document.querySelector('.display');
-
+let counter = 0;
+let stringCounter = 0;
 
 numbers.forEach((number) => number.addEventListener('click', () => {
     str += number.textContent;
-    myString = document.createElement('div');
-    myString.textContent = str;
-    displayScreen.appendChild(myString);
+    if(counter>0){
+        const displayedNumbers = document.querySelectorAll('.displayedNumber');
+        const lastDisplayedNumber = displayedNumbers[stringCounter]; 
+        lastDisplayedNumber.remove();   
+        console.log(counter);
+        counter--;
+    }
 
+    const myString = document.createElement('div');
+    myString.textContent = str;
+    myString.classList.add('displayedNumber');
+    displayScreen.appendChild(myString);
+    counter++;
     }))
 
 const operators = document.querySelectorAll('.operator');
 
 operators.forEach( (operator) => operator.addEventListener('click', () => {
+    counter = 0;
+    stringCounter++;
     myList.push(str);
     str = '';
+
     myList.push(operator.textContent);
     if (operator.textContent == '='){
 
     }
 }))
+
+let displayNumber = (str) => {
+    const divElement = document.createElement('div');
+    divElement.textContent = str;
+    divElement.classList.add('displayedNumber');
+    displayScreen.appendChild(divElement);
+}
