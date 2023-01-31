@@ -4,24 +4,37 @@
     width: 500px;
     height: 500px;
     border-radius: 30px;
-    background-color: #9C89B8;
+    background-color: #FFB627;
     margin: auto;
     margin-top: 50px;
 
 }
 
+@font-face {
+    font-family: digital-7;
+    src: url(./fonts/digital-7.ttf);
+}
+
+
+button{
+    font-family: digital-7;
+}
+
 .header{
+    font-weight: 400;
+    font-size: 20pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F0A6CA;
+    background-color: #E2711D;
     color: #f0e6ef;
     padding: 20px;
 
 }
 
 html {
-    background-color: #efc3e6;
+    font-family: digital-7;
+    background-color: #FFC971;
 }
 
 
@@ -43,10 +56,8 @@ html {
     align-content: center;
     width: 225px;
     height: 50px;
-    background-color: #b8bedd;
-    border: 3px;
+    border: 2px;
     border-style: solid;
-    border-color: #f0a6ca;
     margin: 3px;
     border-radius: 10px;
 
@@ -60,27 +71,32 @@ html {
 }
 
 .operator{
+    border: 2px solid black;
+    font-weight: 400;
+    font-size: 15pt;
     display: flex;
-    width: 80px;
-    height: 110px;
+    width: 70px;
+    height: 100px;
     justify-content: center;
     align-items: center;
-    background-color: #b8bedd;
-    border-color: #f0a6ca;
+    background-color: #CC5803;
+    border-color: black;
     border-radius: 5px;
     font-size: larger;
     
 }
 .number {
+    font-weight: 400;
+    font-size: 15pt;
     border-radius: 5px;
     border-style: solid;
     display: flex;
     width: 70px;
     height: 80px;
-    background-color: #b8bedd;
+    background-color: #CC5803;
     justify-content: center;
     align-items: center;
-    border-color: #f0a6ca;
+    border-color: black;
     border-radius: 5px;
 }
 
@@ -90,7 +106,7 @@ html {
     border-radius: 30px;
     width: 300px;
     height: 50px;
-    background-color: #F0A6CA;
+    background-color: #E2711D;
     color: #B8BEDD;
     align-self: center;
     display: flex;
@@ -101,6 +117,7 @@ html {
 }
 
 .displayedNumber {
+
     color: white;
 
 }
@@ -110,7 +127,9 @@ html {
 }
 
 .footer {
-    background-color: #f0a6ca;
+    font-weight: 400;
+    font-size: 16pt;
+    background-color: #E2711D;
     position: absolute;
     bottom: 0;
     width: 100%;
