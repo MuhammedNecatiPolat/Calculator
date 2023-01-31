@@ -73,7 +73,7 @@ html {
 .operator{
     border: 2px solid black;
     font-weight: 400;
-    font-size: 15pt;
+    font-size: 18pt;
     display: flex;
     width: 70px;
     height: 100px;
@@ -81,9 +81,7 @@ html {
     align-items: center;
     background-color: #CC5803;
     border-color: black;
-    border-radius: 5px;
-    font-size: larger;
-    
+    border-radius: 5px;    
 }
 .number {
     font-weight: 400;
@@ -101,6 +99,7 @@ html {
 }
 
 .display {
+    border: 2px solid black;
     margin: 20px;
     padding: 20px;
     border-radius: 30px;
@@ -117,13 +116,14 @@ html {
 }
 
 .displayedNumber {
-
-    color: white;
+    font-size: 18pt;
+    color: black;
 
 }
 
 .displayedOperator {
-    color: white;
+    color: black;
+    font-size: 18pt;
 }
 
 .footer {
